@@ -155,6 +155,20 @@ const products = [
 ];
 
 function calculateTotalPrice(productName) {
-  // Change code below this line
-  // Change code above this line
+  let sum = 0;
+  for (const product of products) {
+    console.log(product.name);
+    if (productName === product.name) {
+      sum = product.price * product.quantity;
+    }
+  }
+  return sum;
 }
+// Напиши функцію calculateTotalPrice(productName),
+//  яка приймає один параметр productName - назва товару.
+//   Функція повинна повернути загальну
+//   вартість (ціна * кількість) товару з таким ім'ям з масиву products.
+console.log(calculateTotalPrice("Radar"));
+console.log(calculateTotalPrice("Grip"));
+console.log(calculateTotalPrice("Droid"));
+console.log(String.raw`Hello\nworld`);
