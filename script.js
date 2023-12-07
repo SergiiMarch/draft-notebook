@@ -69,24 +69,71 @@
 // console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
 
 /////////////////////////////////////////////////////////////////////////////
-const colors = [
-  { hex: "#f44336", rgb: "244,67,54" },
-  { hex: "#2196f3", rgb: "33,150,243" },
-  { hex: "#4caf50", rgb: "76,175,80" },
-  { hex: "#ffeb3b", rgb: "255,235,59" },
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this linegit
+// // Перебери масив об'єктів colors,
+// //  використовуючи цикл for...of.
+// //  Додай у масив hexColors значення властивостей hex,
+// //   а в масив rgbColors -
+// //   значення властивостей rgb з усіх об'єктів масиву colors.
+// for (const color of colors) {
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// }
+// console.log(hexColors);
+// console.log(rgbColors);
+/////////////////////////////////////////////////////////////////////////////////
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   for (const product of products) {
+//     console.log(product);
+//     if (productName === product.name) {
+//       return product.price;
+//     }
+//   }
+//   return null;
+// }
+// console.log(getProductPrice("Radar"));
+// console.log(getProductPrice("Scanner"));
+// console.log(getProductPrice("Droid"));
+// Напиши функцію getProductPrice(productName),
+// яка приймає один параметр productName - назва продукту.
+// Функція шукає об'єкт продукту з таким ім'ям (властивість name)
+// в масиві products і повертає його ціну (властивість price).
+// Якщо продукт з такою назвою не знайдений, функція повинна повертати null.
+//////////////////////////////////////////////////////////////////////////////////////////
+
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
 ];
 
-const hexColors = [];
-const rgbColors = [];
-// Change code below this linegit
-// Перебери масив об'єктів colors,
-//  використовуючи цикл for...of.
-//  Додай у масив hexColors значення властивостей hex,
-//   а в масив rgbColors -
-//   значення властивостей rgb з усіх об'єктів масиву colors.
-for (const color of colors) {
-  hexColors.push(color.hex);
-  rgbColors.push(color.rgb);
+function getAllPropValues(propName) {
+  // Change code below this line
+  // Change code above this line
 }
-console.log(hexColors);
-console.log(rgbColors);
+// Напиши функцію getAllPropValues(propName),
+//  яка приймає один параметр propName -
+//  ім'я (ключ) властивості.
+//   Функція повинна повернути масив всіх значень властивості
+//   з таким ім'ям з кожного об'єкта в масиві products.
+//   Якщо в об'єктах відсутні властивості з таким ім'ям,
+//    функція повинна повернути порожній масив.
+console.log(getAllPropValues("name"));
+console.log(getAllPropValues("price"));
