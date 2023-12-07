@@ -79,3 +79,14 @@ const colors = [
 const hexColors = [];
 const rgbColors = [];
 // Change code below this linegit
+// Перебери масив об'єктів colors,
+//  використовуючи цикл for...of.
+//  Додай у масив hexColors значення властивостей hex,
+//   а в масив rgbColors -
+//   значення властивостей rgb з усіх об'єктів масиву colors.
+for (const color of colors) {
+  hexColors.push(color.hex);
+  rgbColors.push(color.rgb);
+}
+console.log(hexColors);
+console.log(rgbColors);
