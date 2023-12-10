@@ -147,28 +147,30 @@
 // console.log(getAllPropValues("price"));
 // console.log(getAllPropValues("quantity"));
 /////////////////////////////////////////////////////////////////////////////////////
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
 
-function calculateTotalPrice(productName) {
-  let sum = 0;
-  for (const product of products) {
-    console.log(product.name);
-    if (productName === product.name) {
-      sum = product.price * product.quantity;
-    }
-  }
-  return sum;
-}
-// Напиши функцію calculateTotalPrice(productName),
-//  яка приймає один параметр productName - назва товару.
-//   Функція повинна повернути загальну
-//   вартість (ціна * кількість) товару з таким ім'ям з масиву products.
-console.log(calculateTotalPrice("Radar"));
-console.log(calculateTotalPrice("Grip"));
-console.log(calculateTotalPrice("Droid"));
-console.log(String.raw`Hello\nworld`);
+// function calculateTotalPrice(productName) {
+//   let sum = 0;
+//   for (const product of products) {
+//     console.log(product.name);
+//     if (productName === product.name) {
+//       sum = product.price * product.quantity;
+//     }
+//   }
+//   return sum;
+// }
+// // Напиши функцію calculateTotalPrice(productName),
+// //  яка приймає один параметр productName - назва товару.
+// //   Функція повинна повернути загальну
+// //   вартість (ціна * кількість) товару з таким ім'ям з масиву products.
+// console.log(calculateTotalPrice("Radar"));
+// console.log(calculateTotalPrice("Grip"));
+// console.log(calculateTotalPrice("Droid"));
+// console.log(String.raw`Hello\nworld`);
+
+///////////////////////////////////////////////////////////////////
