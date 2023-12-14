@@ -288,3 +288,20 @@
 // у властивостях category і priority повинні бути значення за замовчуванням,
 // що зберігаються в однойменних локальних змінних.
 /////////////////////////////////////////////////////////////////
+// Change code below this line
+function add(...args) {
+  console.log(args);
+  // Change code above this line
+  let sum = 0;
+  for (const arg of args) {
+    sum += arg;
+  }
+  return sum;
+}
+// Використовуючи операцію rest,
+// доповни код функції add() таким чином,
+//  щоб вона приймала будь-яку кількість аргументів,
+//   рахувала і повертала їх суму.
+console.log(add(15, 27));
+console.log(add(32, 6, 13, 19, 8));
+console.log(add(74, 11, 62, 46, 12, 36));
