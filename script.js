@@ -328,3 +328,60 @@
 // console.log(addOverNum(50, 15, 27));
 // console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
 ////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// function findMatches(arg, ...arg1) {
+//   const matches = []; // Don't change this line
+//   console.log(arg1);
+//   for (const el of arg) {
+//     console.log(el);
+//     if (arg1.includes(el)) {
+//       matches.push(el);
+//     }
+//   }
+
+//   // Change code above this line
+//   return matches;
+// }
+
+// // Функція findMatches() приймає довільну кількість аргументів.
+// //  Першим аргументом завжди буде масив чисел, а решта аргументів будуть просто числами.
+// // Доповни код функції таким чином, щоб вона повертала новий масив matches,
+// // в якому будуть тільки ті аргументи, починаючи з другого, які є в масиві першого аргументу.
+// // Наприклад, findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7) повинна повернути масив [1, 2],
+// // тому що тільки вони є в масиві першого аргументу.
+
+// console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+// console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+// console.log(findMatches([63, 11, 8, 29], 4, 7, 16));
+////////////////////////////////////////////////////////////////////////////////////////
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   // Change code above this line
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+// };
+
+// Додай об'єкту bookShelf ще два методи,
+// які поки що будуть повертати просто рядки за аналогією
+// з getBooks() і addBook(bookName).
+// Метод removeBook(bookName) буде видаляти книгу за назвою.
+// Повертає рядок "Deleting book <назва книги>", де <назва книги> - це значення параметра bookName.
+// Метод updateBook(oldName, newName) буде оновлювати назву книги на нову.
+// Повертає рядок "Updating book <стара назва> to <нова назва>",
+// де <стара назва> і <нова назва> - це значення параметрів oldName і newName відповідно.
+
+// console.log(bookShelf.getBooks());
+// console.log(bookShelf.addBook("Haze"));
+// console.log(bookShelf.removeBook("Red sunset"));
+///////////////////////////////////////////////////////////////////////////////////////////////
