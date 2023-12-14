@@ -202,7 +202,7 @@
 //     high: 31,
 //   },
 // };
-// // Change code below this line
+// // Change code below this lin
 // const {
 //   today: {
 //     low: lowToday,
@@ -218,3 +218,73 @@
 
 // console.log(highToday);
 // console.log(lowTomorrow);
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+// console.log(bestScore);
+// console.log(worstScore);
+///////////////////////////////////////////////
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [
+//   ...firstGroupScores,
+//   ...secondGroupScores,
+//   ...thirdGroupScores,
+// ];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+// console.log(allScores);
+// console.log(bestScore);
+// console.log(worstScore);
+//////////////////////////////////////////
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+// console.log(finalSettings);
+///////////////////////////////////////////////////////////////
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+//   // Change code below this line
+//   const newmakeTask = {
+//     completed,
+//     category: "General",
+//     priority: "Normal",
+//     ...data,
+//   };
+
+//   // Change code above this line
+//   return newmakeTask;
+// }
+// console.log(
+//   makeTask({
+//     category: "Homemade",
+//     priority: "Low",
+//     text: "Take out the trash",
+//   })
+// );
+// Функція повинна створити і повернути новий об'єкт завдання
+// , не змінюючи напряму параметр data. У новому об'єкті повинна
+//  бути властивість completed, значення якої зберігається в однойменній локальній змінній.
+// В параметрі data гарантовано буде тільки властивість text,
+// а інші дві, category і priority, можуть бути відсутніми.
+// Тоді, в новому об'єкті завдання,
+// у властивостях category і priority повинні бути значення за замовчуванням,
+// що зберігаються в однойменних локальних змінних.
+/////////////////////////////////////////////////////////////////
