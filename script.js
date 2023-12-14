@@ -289,19 +289,42 @@
 // що зберігаються в однойменних локальних змінних.
 /////////////////////////////////////////////////////////////////
 // Change code below this line
-function add(...args) {
-  console.log(args);
-  // Change code above this line
-  let sum = 0;
-  for (const arg of args) {
-    sum += arg;
-  }
-  return sum;
-}
-// Використовуючи операцію rest,
-// доповни код функції add() таким чином,
-//  щоб вона приймала будь-яку кількість аргументів,
-//   рахувала і повертала їх суму.
-console.log(add(15, 27));
-console.log(add(32, 6, 13, 19, 8));
-console.log(add(74, 11, 62, 46, 12, 36));
+// function add(...args) {
+//   console.log(args);
+//   // Change code above this line
+//   let sum = 0;
+//   for (const arg of args) {
+//     sum += arg;
+//   }
+//   return sum;
+// }
+// // Використовуючи операцію rest,
+// // доповни код функції add() таким чином,
+// //  щоб вона приймала будь-яку кількість аргументів,
+// //   рахувала і повертала їх суму.
+// console.log(add(15, 27));
+// console.log(add(32, 6, 13, 19, 8));
+// console.log(add(74, 11, 62, 46, 12, 36));
+////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// function addOverNum(firstNumber, ...args) {
+//   let total = 0;
+//   console.log(total);
+//   for (const arg of args) {
+//     if (firstNumber < arg) {
+//       total += arg;
+//     }
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+// Функція addOverNum() рахує суму всіх аргументів.
+// Зміни параметри і тіло функції addOverNum() таким чином,
+// щоб вона рахувала суму тільки тих аргументів,
+// які більші за задане число.
+//  Це число повинно бути першим параметром функції.
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+// console.log(addOverNum(50, 15, 27));
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+////////////////////////////////////////////////////////////////////////////
