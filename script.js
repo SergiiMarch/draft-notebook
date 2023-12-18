@@ -441,10 +441,18 @@
 // console.log(atTheOldToad.removePotion("Dragon breath"));
 // console.log(atTheOldToad.removePotion("Speed potion"));
 ///////////////////////////////////////////////////////////////////////////////
-const atTheOldToad = {
-  potions: ["Speed potion", "Dragon breath", "Stone skin"],
-  updatePotionName(oldName, newName) {
-    // Change code below this line
-    // Change code above this line
-  },
-};
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+//     // Change code below this line
+//     const indexName = this.potions.indexOf(oldName);
+//     this.potions.splice(indexName, 1, newName);
+//     // Change code above this line
+//     return this.potions;
+//   },
+// };
+// Доповни метод updatePotionName(oldName, newName) таким чином,
+//  щоб він оновлював назву зілля з oldName на newName
+//  в масиві зілля у властивості potions.
+// console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
+//////////////////////////////////////////////////////////////////////////////////////
