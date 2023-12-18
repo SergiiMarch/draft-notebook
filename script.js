@@ -402,3 +402,49 @@
 //    і splice() для того, щоб замінити цей елемент.
 // console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
 /////////////////////////////////////////////////////////////////////////////////////////////////
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   // Change code above this line
+// };
+// console.log(atTheOldToad.getPotions());
+//////////////////////////////////////////////////////////////////
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     // Change code below this line
+//     this.potions.push(potionName);
+//     // Change code above this line
+//     return this.potions;
+//   },
+// };
+
+// Доповни метод addPotion(potionName) таким чином,
+// щоб він додавав зілля potionName
+//  в кінець масиву зілля у властивості potions.
+// console.log(atTheOldToad.addPotion("Invisibility"));
+//////////////////////////////////////////////////////////////////////
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+//     const indexPotion = this.potions.indexOf(potionName);
+//     this.potions.splice(indexPotion, 1);
+//     // Change code above this line
+//     return this.potions;
+//   },
+// };
+// console.log(atTheOldToad.removePotion("Dragon breath"));
+// console.log(atTheOldToad.removePotion("Speed potion"));
+///////////////////////////////////////////////////////////////////////////////
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  updatePotionName(oldName, newName) {
+    // Change code below this line
+    // Change code above this line
+  },
+};
