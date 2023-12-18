@@ -385,3 +385,20 @@
 // console.log(bookShelf.addBook("Haze"));
 // console.log(bookShelf.removeBook("Red sunset"));
 ///////////////////////////////////////////////////////////////////////////////////////////////
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//     // Change code below this line
+//     const indexBook = this.books.indexOf(oldName);
+//     this.books.splice(indexBook, 1, newName);
+//     // Change code above this line
+//     // this.books.push(newBook);
+//     return this.books;
+//   },
+// };
+// Доповни метод updateBook(oldName, newName) таким чином,
+//  щоб він змінював назву книги з oldName на newName у властивості books.
+//   Використовуй indexOf() для того, щоб знайти потрібний елемент масиву,
+//    і splice() для того, щоб замінити цей елемент.
+// console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+/////////////////////////////////////////////////////////////////////////////////////////////////
