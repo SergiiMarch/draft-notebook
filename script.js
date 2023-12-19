@@ -457,45 +457,44 @@
 // console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
 //////////////////////////////////////////////////////////////////////////////////////
 
-const atTheOldToad = {
-  potions: [
-    { name: "Speed potion", price: 460 },
-    { name: "Dragon breath", price: 780 },
-    { name: "Stone skin", price: 520 },
-  ],
-  // Change code below this line
-  getPotions() {
-    return this.potions;
-  },
-  addPotion(newPotion) {
-    for (let i = 0; i < this.potions.length; i += 1) {
-      console.log(this.potions[i].name);
-      console.log(newPotion.name);
-      if (this.potions[i].name === newPotion.name)
-        return `Error! Potion ${newPotion.name} is already in your inventory!`;
-    }
-    this.potions.push(newPotion);
-    return this.potions;
-  },
-  removePotion(potionName) {
-    for (let i = 0; i < this.potions.length; i += 1) {
-      if (this.potions[i].name === potionName) {
-        this.potions.splice(i, 1);
-        return `Potion ${potionName} has been removed from your inventory!`;
-      }
-    }
-  },
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       console.log(this.potions[i].name);
+//       console.log(newPotion.name);
+//       if (this.potions[i].name === newPotion.name)
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//     }
+//     this.potions.push(newPotion);
+//     return this.potions;
+//   },
+//   removePotion(potionName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (this.potions[i].name === potionName) {
+//         this.potions.splice(i, 1);
+//         return `Potion ${potionName} has been removed from your inventory!`;
+//       }
+//     }
+//   },
 
-  updatePotionName(oldName, newName) {
-    const potionIndex = this.potions.indexOf(oldName);
-
-    if (potionIndex === -1) {
-      return `Potion ${oldName} is not in inventory!`;
-    }
-
-    this.potions.splice(potionIndex, 1, newName);
-  },
-};
+//   updatePotionName(oldName, newName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (this.potions[i].name === oldName) {
+//         this.potions[i].name = newName;
+//       }
+//     }
+//     return this.potions;
+//   },
+// };
 
 // Виконай рефакторинг методів об'єкта atTheOldToad таким чином, щоб вони працювали не з масивом рядків, а з масивом об'єктів.
 // getPotions() - метод для отримання всього зілля.
@@ -506,5 +505,9 @@ const atTheOldToad = {
 // updatePotionName(oldName, newName) - оновлює властивість name об'єкта-
 // зілля з назвою oldName на newName в масиві potions.
 // console.log(atTheOldToad.addPotion({ name: "jtone skin", price: 520 }));
-console.log(atTheOldToad.removePotion("Speed potion"));
-console.log(atTheOldToad.potions);
+// console.log(atTheOldToad.removePotion("Speed potion"));
+// console.log(atTheOldToad.potions);
+// console.log(
+//   atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion")
+// );
+///////////////////////////////////////////////////////////////////////////////////
