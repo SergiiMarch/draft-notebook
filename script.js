@@ -621,10 +621,32 @@
 // //  у змінну message записується рядок "Not enough goods in stock!".
 // // В іншому випадку записується рядок "Order is processed, our manager will contact you.".
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-  let message;
-  // Change code below this line
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
+//   // Change code below this line
+//   const totalPrice = pricePerDroid * orderedQuantity;
+//   // Change code above this line
+//   if (customerCredits >= totalPrice) {
+//     message = `You ordered ${orderedQuantity} droids, you have ${
+//       customerCredits - totalPrice
+//     } credits left`;
+//   } else {
+//     message = "Insufficient funds!";
+//   }
+//   return message;
+// }
+// console.log(makeTransaction(3000, 5, 23000));
+// console.log(makeTransaction(5000, 10, 8000));
+// // pricePerDroid - ціна одного дроїда
+// // orderedQuantity - кіл-сть замовлених дроїдів
+// // customerCredits - сума коштів на рахунку клієнта
+// // Доповни її наступним функціоналом:
 
-  // Change code above this line
-  return message;
-}
+// // Оголоси змінну totalPrice для зберігання загальної суми замовлення
+// //  і присвой їй вираз розрахунку цієї суми.
+// // Додай перевірку, чи зможе клієнт оплатити замовлення:
+// // якщо сума до сплати перевищує кількість кредитів на рахунку клієнта,
+// //  запиши у змінну message рядок "Insufficient funds!";
+// // в іншому випадку, відніми суму покупки з рахунку клієнта і
+// //  запиши у змінну message повідомлення: "You ordered <число> droids, you have <число> credits left".
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
