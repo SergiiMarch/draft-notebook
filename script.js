@@ -650,27 +650,71 @@
 // // в іншому випадку, відніми суму покупки з рахунку клієнта і
 // //  запиши у змінну message повідомлення: "You ordered <число> droids, you have <число> credits left".
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-function checkStorage(available, ordered) {
-  let message;
-  // Change code below this line
-  if (ordered === 0) {
-    message = "There are no products in the order!";
-  } else if (ordered < available) {
-    message = "Your order is too large, there are not enough items in stock!";
-  } else {
-    ("The order is accepted, our manager will contact you");
-  }
-  // Change code above this line
-  return message;
-}
-console.log(checkStorage(100, 50));
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
+//   if (ordered === 0) {
+//     message = "There are no products in the order!";
+//   } else if (ordered < available) {
+//     message = "Your order is too large, there are not enough items in stock!";
+//   } else {
+//     ("The order is accepted, our manager will contact you");
+//   }
+//   // Change code above this line
+//   return message;
+// }
+// console.log(checkStorage(100, 50));
 
-// available - доступна кількість товарів на складі
-// ordered - одиниць товару в замовленні
-// Використовуючи розгалуження, доповни код функції таким чином, що:
+// // available - доступна кількість товарів на складі
+// // ordered - одиниць товару в замовленні
+// // Використовуючи розгалуження, доповни код функції таким чином, що:
 
-// Якщо в замовленні ще немає товарів, тобто значення параметра ordered дорівнює 0,
-// у змінну message присвоюється рядок "There are no products in the order!".
-// Якщо товарів у замовленні більше, ніж доступно товарів на складі,
-// то у змінну message присвоюється рядок "Your order is too large, there are not enough items in stock!".
-// В іншому випадку у змінну message присвоюється рядок "The order is accepted, our manager will contact you".
+// // Якщо в замовленні ще немає товарів, тобто значення параметра ordered дорівнює 0,
+// // у змінну message присвоюється рядок "There are no products in the order!".
+// // Якщо товарів у замовленні більше, ніж доступно товарів на складі,
+// // то у змінну message присвоюється рядок "Your order is too large, there are not enough items in stock!".
+// // В іншому випадку у змінну message присвоюється рядок "The order is accepted, our manager will contact you".
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// // Напишіть функцію, щоб розділити рядок і перетворити його на масив слів.
+// function stringToArray(string) {
+//   // code code code
+//   return string.split(" ");
+// }
+// console.log(stringToArray("hellow my world"));
+/////////////////////////////////////////////////////////////////////////////////////////////
+// function getDiscount(totalSpent) {
+//   const BASE_DISCOUNT = 0;
+//   const BRONZE_DISCOUNT = 0.02;
+//   const SILVER_DISCOUNT = 0.05;
+//   const GOLD_DISCOUNT = 0.1;
+//   let discount;
+//   // Change code below this line
+//   if (totalSpent >= 50000) {
+//     discount = GOLD_DISCOUNT;
+//   } else if (totalSpent >= 20000 && totalSpent < 50000) {
+//     discount = SILVER_DISCOUNT;
+//   } else if (totalSpent >= 5000 && totalSpent < 20000) {
+//     discount = BRONZE_DISCOUNT;
+//   } else {
+//     discount = BASE_DISCOUNT;
+//   }
+//   // Change code above this line
+//   return discount;
+// }
+// console.log(getDiscount(137000));
+// console.log(getDiscount(1300));
+// console.log(getDiscount(20000));
+// console.log(getDiscount(5000));
+// // Використовуючи розгалуження і логічні оператори, доповни код функції.
+
+// // Якщо витрачено від 50000 (включно) або більше кредитів
+// // - знижка 10% (золотий партнер)
+// // Якщо витрачено від 20000 (включно) до 50000 кредитів
+// //  - знижка 5% (срібний партнер)
+// // Якщо витрачено від 5000 (включно) до 20000 кредитів
+// //  - знижка 2% (бронзовий партнер)
+// // Якщо витрачено менше 5000 кредитів
+// // - знижка 0 (базовий партнер)
+// // Значення знижок кожного рівня зберігаються в однойменних константах BASE_DISCOUNT, BRONZE_DISCOUNT, SILVER_DISCOUNT і GOLD_DISCOUNT.
+/////////////////////////////////////////////////////////////////////////////////////////////
