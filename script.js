@@ -511,3 +511,23 @@
 //   atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion")
 // );
 ///////////////////////////////////////////////////////////////////////////////////
+// function problem(x) {
+//   //your code here
+//   if (typeof x === "string") {
+//     return "Error";
+//   } else {
+//     return x * 6 + 6;
+//   }
+// }
+// console.log(problem("ty"));
+////////////////////////////////////////////////////////////////////
+
+// let productName = "Droid";
+// let pricePerItem = 2000;
+// productName = "Repair droid";
+// pricePerItem = pricePerItem + 1500;
+
+// // Change code below this line
+// console.log(productName);
+// console.log(pricePerItem);
+//////////////////////////////////////////////////////////
