@@ -531,3 +531,67 @@
 // console.log(productName);
 // console.log(pricePerItem);
 //////////////////////////////////////////////////////////
+// const topSpeed = 160;
+// const distance = 617.54;
+// const login = "mango935";
+// const isOnline = true;
+// const isAdmin = false;
+// const productName = "Droid";
+// const pricePerItem = 3500;
+// const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
+// // Change code below this line
+// console.log(message);
+///////////////////////////////////////////////////////////////////////
+// Магазин з продажу ремонтних дроїдів готовий до відкриття,
+// залишилося написати скрипт для їх замовлення. Оголоси змінні та присвой їм відповідні значення:
+// pricePerDroid - ціна одного дроїда, значення 800
+// orderedQuantity - кількість дроїдів у замовленні, значення 6
+// deliveryFee - вартість доставки, значення 50
+// totalPrice - загальна сума замовлення до сплати, не забудь про вартість доставки
+// message - повідомлення про стан замовлення у форматі
+// "You ordered droids worth <total price> credits. Delivery (<delivery fee> credits) is included in total price."
+// const pricePerDroid = 800;
+// const orderedQuantity = 6;
+// const deliveryFee = 50;
+// const totalPrice = pricePerDroid * orderedQuantity + deliveryFee;
+// const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
+// console.log(message);
+/////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// function add(a, b, c) {
+//   console.log(`Addition result equals ${a + b + c}`);
+//   // Change code above this line
+// }
+
+// add(15, 27, 10);
+// add(10, 20, 30);
+// add(5, 10, 15);
+
+// Функція add повинна вміти додавати три числа і виводити результат у консоль.
+//  Додай функції add три параметри: a, b і c, які будуть отримувати значення аргументів під час її виклику.
+// Доповни console.log() таким чином, щоб він логував рядок "Addition result equals <result>", де <result> - це сума переданих чисел.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function makeMessage(name, price) {
+//   // Change code below this line
+//   const message = `You picked ${name}, price per item is ${price} credits`;
+//   // Change code above this line
+//   return message;
+// }
+// // Доповни код функції таким чином, щоб у змінну message записувався рядок
+// // "You picked <product name>, price per item is <product price> credits",
+// // де <product name> і <product price> - це значення параметрів name і price.
+// // Використовуй синтаксис шаблонних рядків.
+// console.log(makeMessage("Radar", 6150));
+////////////////////////////////////////////////////////////////////////////////////////////////
+function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+  // Change code below this line
+  const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+
+  const message = `"You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price."`;
+
+  // Change code above this line
+  return message;
+}
+console.log(makeOrderMessage(2, 100, 50));
+console.log(makeOrderMessage(4, 300, 100));
+console.log(makeOrderMessage(10, 70, 200));
