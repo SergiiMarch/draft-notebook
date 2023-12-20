@@ -583,15 +583,48 @@
 // // Використовуй синтаксис шаблонних рядків.
 // console.log(makeMessage("Radar", 6150));
 ////////////////////////////////////////////////////////////////////////////////////////////////
-function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
-  // Change code below this line
-  const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+//   // Change code below this line
+//   const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
 
-  const message = `"You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price."`;
+//   const message = `"You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price."`;
+
+//   // Change code above this line
+//   return message;
+// }
+// console.log(makeOrderMessage(2, 100, 50));
+// console.log(makeOrderMessage(4, 300, 100));
+// console.log(makeOrderMessage(10, 70, 200));
+//////////////////////////////////////////////////////////
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
+//   if (ordered > available) {
+//     message = "Not enough goods in stock!";
+//   } else {
+//     message = "Order is processed, our manager will contact you.";
+//   }
+//   // Change code above this line
+//   return message;
+// }
+// console.log(checkStorage(100, 130));
+// console.log(checkStorage(200, 20));
+// // Функція checkStorage(available, ordered) перевіряє можливість оформлення замовлення
+// //  і повертає повідомлення про результат.
+// //   Вона оголошує два параметри, значення яких будуть задаватися під час її виклику:
+
+// // available - загальна кількість товарів на складі
+// // ordered - одиниць товару в замовленні
+// // Використовуючи розгалуження, доповни код функції таким чином, що:
+
+// // Якщо в замовленні вказане число, яке перевищує кількість товарів на складі,
+// //  у змінну message записується рядок "Not enough goods in stock!".
+// // В іншому випадку записується рядок "Order is processed, our manager will contact you.".
+///////////////////////////////////////////////////////////////////////////////////////////////////
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+  let message;
+  // Change code below this line
 
   // Change code above this line
   return message;
 }
-console.log(makeOrderMessage(2, 100, 50));
-console.log(makeOrderMessage(4, 300, 100));
-console.log(makeOrderMessage(10, 70, 200));
