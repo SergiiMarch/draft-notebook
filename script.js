@@ -719,20 +719,88 @@
 // // Значення знижок кожного рівня зберігаються в однойменних константах BASE_DISCOUNT, BRONZE_DISCOUNT, SILVER_DISCOUNT і GOLD_DISCOUNT.
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-function checkPassword(password) {
-  const ADMIN_PASSWORD = "jqueryismyjam";
-  let message;
-  // Change code below this line
-  message =
-    password === ADMIN_PASSWORD
-      ? "Access is allowed"
-      : "Access denied, wrong password!";
-  // Change code above this line
-  return message;
-}
-console.log(checkPassword("jqueryismyjam"));
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+//   // Change code below this line
+//   message =
+//     password === ADMIN_PASSWORD
+//       ? "Access is allowed"
+//       : "Access denied, wrong password!";
+//   // Change code above this line
+//   return message;
+// }
+// console.log(checkPassword("jqueryismyjam"));
 
-// Використовуючи тернарний оператор, доповни функцію таким чином, що:
-// Якщо значення password і ADMIN_PASSWORD збігаються,
-//  присвой змінній message рядок "Access is allowed".
-// В іншому випадку, присвой message рядок "Access denied, wrong password!".
+// // Використовуючи тернарний оператор, доповни функцію таким чином, що:
+// // Якщо значення password і ADMIN_PASSWORD збігаються,
+// //  присвой змінній message рядок "Access is allowed".
+// // В іншому випадку, присвой message рядок "Access denied, wrong password!".
+//////////////////////////////////////////////////////////////////////////////////////////
+// // Функція getSubscriptionPrice(type) отримує рядок з типом передплати
+// // користувача (параметр type),
+// // перевіряє її на збіг з трьома можливими типами щомісячної передплати та повертає ціну,
+// // що зберігається у змінній price.
+// // Якщо значення параметра type - це рядок:
+// // "starter" - ціна передплати 0 кредитів.
+// // "professional" - ціна передплати 20 кредитів.
+// // "organization" - ціна передплати 50 кредитів.
+// function getSubscriptionPrice(type) {
+//   let price;
+//   // Change code below this line
+
+//   switch (
+//     type // Change this line
+//   ) {
+//     case "starter": // Change this line
+//       price = 0; // Change this line
+//       break;
+
+//     case "professional": // Change this line
+//       price = 20; // Change this line
+//       break;
+
+//     case "organization": // Change this line
+//       price = 50; // Change this line
+//       break;
+//   }
+
+//   // Change code above this line
+//   return price;
+// }
+// console.log(getSubscriptionPrice("organization"));
+// console.log(getSubscriptionPrice("starter"));
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+//   // Change code below this line
+//   switch (password) {
+//     case null:
+//       message = "Canceled by user!";
+//       break;
+
+//     case ADMIN_PASSWORD:
+//       message = "Welcome!";
+//       break;
+
+//     default:
+//       message = "Access denied, wrong password!";
+//   }
+
+//   // Change code above this line
+//   return message;
+// }
+// console.log(checkPassword(null));
+// console.log(checkPassword("polyhax"));
+// console.log(checkPassword("jqueryismyjam"));
+// // Якщо значення параметра password:
+// // дорівнює null, значить користувач скасував операцію
+// //  і в message записується рядок "Canceled by user!".
+// // збігається зі значенням ADMIN_PASSWORD,
+// // у змінну message присвоюється рядок "Welcome!".
+// // не задовольняє жодну з попередніх умов,
+// // у змінну message записується рядок "Access denied, wrong password!".
+// // Зроби рефакторинг коду, замінивши інструкцію if..else на switch,
+// //  і не забудь про блок default (аналог else).
+//////////////////////////////////////////////////////////////////////////////////////////////////////
