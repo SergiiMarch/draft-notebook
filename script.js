@@ -718,3 +718,21 @@
 // // - знижка 0 (базовий партнер)
 // // Значення знижок кожного рівня зберігаються в однойменних константах BASE_DISCOUNT, BRONZE_DISCOUNT, SILVER_DISCOUNT і GOLD_DISCOUNT.
 /////////////////////////////////////////////////////////////////////////////////////////////
+
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  let message;
+  // Change code below this line
+  message =
+    password === ADMIN_PASSWORD
+      ? "Access is allowed"
+      : "Access denied, wrong password!";
+  // Change code above this line
+  return message;
+}
+console.log(checkPassword("jqueryismyjam"));
+
+// Використовуючи тернарний оператор, доповни функцію таким чином, що:
+// Якщо значення password і ADMIN_PASSWORD збігаються,
+//  присвой змінній message рядок "Access is allowed".
+// В іншому випадку, присвой message рядок "Access denied, wrong password!".
