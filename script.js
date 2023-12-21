@@ -804,3 +804,48 @@
 // // Зроби рефакторинг коду, замінивши інструкцію if..else на switch,
 // //  і не забудь про блок default (аналог else).
 //////////////////////////////////////////////////////////////////////////////////////////////////////
+// function getShippingCost(country) {
+//   let message;
+//   // Change code below this line
+//   switch (country) {
+//     case "China":
+//       price = 100;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//     case "Chile":
+//       price = 250;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//     case "Jamaica":
+//       price = 100;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//     case "Australia":
+//       price = 120;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//     default:
+//       message = "Sorry, there is no delivery to your country";
+//       break;
+//   }
+//   // Change code above this line
+//   return message;
+// }
+// // console.log(getShippingCost("Germany"));
+// console.log(getShippingCost("China"));
+// console.log(getShippingCost("Chile"));
+// // Формат рядка, що повертається "Shipping to <country> will cost <price> credits",
+// //  де замість <country> і <price>, необхідно підставити відповідні значення.
+// // Список країн і вартість доставки:
+// // China - 100 кредитів
+// // Chile - 250 кредитів
+// // Australia - 170 кредитів
+// // Jamaica - 120 кредитів
+// // Зі списку видно, що доставка можлива не скрізь.
+// // Якщо зазначена країна відсутня у списку,
+// // то функція повинна повернути рядок "Sorry, there is no delivery to your country"
+//////////////////////////////////////////////////////////////////////////////////////////
