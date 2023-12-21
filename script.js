@@ -849,3 +849,67 @@
 // // Якщо зазначена країна відсутня у списку,
 // // то функція повинна повернути рядок "Sorry, there is no delivery to your country"
 //////////////////////////////////////////////////////////////////////////////////////////
+// const courseTopic = "JavaScript essentials";
+// // Change code below this line
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+
+// console.log(courseTopicLength);
+// console.log(firstElement);
+// console.log(lastElement);
+
+// // Change code above this line
+// // courseTopicLength - довжина рядка.
+// // firstElement - перший символ рядка.
+// // lastElement - останній символ рядка.
+//////////////////////////////////////////////////////////////////////////////////////////
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length); // Change this line
+
+//   return substring;
+// }
+// console.log(getSubstring("Hello world", 3));
+// console.log(getSubstring("Hello world", 6));
+// // string - оригінальний рядок
+// // length - кількість символів з початку рядка для підрядка
+// // Присвой змінній substring вираз створення підрядка
+// //  довжиною length символів (від початку) з рядка string.
+////////////////////////////////////////////////////////////////////////////////////////
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   if (message.length === maxLength) {
+//     result = message;
+//   } else {
+//     result = message.slice(message, maxLength) + "...";
+//   }
+//   /// Change code above this line
+//   return result;
+// }
+// // console.log(formatMessage("Curabitur ligula sapien", 16));
+// // console.log(formatMessage("Curabitur ligula sapien", 23));
+// // console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+// // console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+// console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+// // Доповни код функції таким чином, що якщо довжина рядка:
+// // не перевищує maxLength, функція повертає його в початковому вигляді.
+// // більша за maxLength, то функція обрізає рядок до maxLength символів
+// //  і додає в кінець три крапки "...", після чого повертає скорочену версію.
+/////////////////////////////////////////////////////////////////////////////////////////
+// function checkForSpam(message) {
+//   let result =
+//     message.toLowerCase().includes("sale") ||
+//     message.toLowerCase().includes("spam");
+
+//   return result;
+// }
+// console.log(checkForSpam("Trust me, this is not a spam message"));
+// // Функція checkForSpam(message) приймає рядок (параметр message),
+// // перевіряє його на вміст заборонених слів spam і sale,
+// // і повертає результат перевірки. Слова в рядку параметра message можуть бути
+// // у довільному регістрі, наприклад SPAM або sAlE.
+// // Якщо знайшли заборонене слово (spam або sale) то функція повертає буль true.
+// // Якщо в рядку відсутні заборонені слова, функція повертає буль false.
