@@ -947,3 +947,19 @@
 // // Виконай рефакторинг коду функції checkStorage,
 // //  використовуючи патерн «раннє повернення».
 /////////////////////////////////////////////////////////////////////////////////////
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// // Write your code under this line
+// fruits[1] = "peach";
+// fruits[3] = "banana";
+// console.log(fruits);
+
+// const fruits = ["apple", "peach", "pear", "banana"];
+// const lastElementIndex = fruits.length - 1;
+// const lastElement = fruits[lastElementIndex];
+// // Change code below this line
+// // lastElementIndex	Індекс останнього елемента масиву fruits через довжина_масиву - 1
+// // lastElement	Значення останнього елемента масиву
+// console.log(lastElementIndex);
+// console.log(lastElement);
+/////////////////////////////////////////////////////////////////////////////////////////
