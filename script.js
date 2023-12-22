@@ -913,3 +913,37 @@
 // // у довільному регістрі, наприклад SPAM або sAlE.
 // // Якщо знайшли заборонене слово (spam або sale) то функція повертає буль true.
 // // Якщо в рядку відсутні заборонені слова, функція повертає буль false.
+///////////////////////////////////////////////////////////////////////////////////
+// function abbrevName(name) {
+//   // code away
+//   return name
+//     .split(" ")
+//     .map((name) => name[0].toUpperCase())
+//     .join(".");
+// }
+// console.log(abbrevName("Sam Harris"));
+//////////////////////////////////////////////////////////////////////////////////////
+// const mouthSize = (animal) =>
+//   animal.toLowerCase() === "aligator" ? "small" : "wide";
+// // code here
+
+// console.log(mouthSize("aligator"));
+/////////////////////////////////////////////////////////////////////////////////////
+// function checkStorage(available, ordered) {
+//   // Change code below this line
+
+//   if (ordered === 0) {
+//     return "Your order is empty!";
+//   }
+//   if (ordered > available) {
+//     return "Your order is too large, not enough goods in stock!";
+//   }
+//   return "The order is accepted, our manager will contact you";
+
+//   // Change code above this line
+// }
+// // available - доступна кількість товарів на складі
+// // ordered - кількість одиниць товару в замовленні
+// // Виконай рефакторинг коду функції checkStorage,
+// //  використовуючи патерн «раннє повернення».
+/////////////////////////////////////////////////////////////////////////////////////
