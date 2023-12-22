@@ -1102,3 +1102,28 @@
 // // і повертає найдовше слово в цьому рядку.
 // console.log(findLongestWord("Google do a roll"));
 // console.log(findLongestWord("May the force be with you"));
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(1, 3));
+// console.log(createArrayOfNumbers(29, 34));
+// console.log(createArrayOfNumbers(14, 17));
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+function filterArray(numbers, value) {
+  // Change code below this line
+  // Change code above this line
+}
+console.log(filterArray([1, 2, 3, 4, 5], 3));
+console.log(filterArray([1, 2, 3, 4, 5], 4));
+console.log(filterArray([1, 2, 3, 4, 5], 5));
+// Напиши функцію filterArray(numbers, value),
+//  яка приймає масив чисел (параметр numbers) і
+//  повертає новий масив, в якому будуть тільки ті
+//  елементи масиву numbers, які більші за значення параметра value (число).
