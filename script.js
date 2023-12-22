@@ -1019,4 +1019,34 @@
 // // Усі символи slug повинні бути у нижньому регістрі
 // // Всі слова slug повинні бути розділені тире
 // console.log(slugify("Arrays for begginers"));
-/////////////////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////////////////
+// const fruits = ["apple", "plum", "pear", "orange", "banana"];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, fruits.length - 1);
+// const lastThreeEls = fruits.slice(2);
+// console.log(firstTwoEls);
+// console.log(nonExtremeEls);
+// console.log(lastThreeEls);
+
+// // firstTwoEls - масив із перших двох елементів
+// // nonExtremeEls - масив з усіх елементів, крім першого та останнього
+// // lastThreeEls - масив із трьох останніх елементів
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// function makeArray(firstArray, secondArray, maxLength) {
+//   // Change code below this line
+//   const newArray = firstArray.concat(secondArray).slice(0, maxLength);
+//   console.log(newArray);
+//   // Change code above this line
+//   return newArray;
+// }
+// console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4));
+// // Напиши функцію makeArray(firstArray, secondArray, maxLength)
+// // для створення нового масиву з усіма елементами двох вихідних firstArray і
+// // secondArray. Параметр maxLength містить максимально допустиму довжину нового масиву.
+// // Якщо кількість елементів нового масиву більша за maxLength,
+// // функція повинна повернути копію масиву довжиною maxLength елементів.
+// // В іншому випадку функція повинна повернути новий масив повністю.
+//////////////////////////////////////////////////////////////////////////////////////////////////
