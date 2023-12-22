@@ -1083,3 +1083,22 @@
 // // Загальна сума елементів повинна зберігатися у змінній total,
 // //  яка повертається як результат роботи функції.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function findLongestWord(string) {
+//   // Change code below this line
+//   const newWord = string.split(" ");
+//   let longWord = " ";
+//   // Change code above this line
+//   for (let i = 0; i < newWord.length; i += 1) {
+//     if (newWord[i].length > longWord.length) {
+//       longWord = newWord[i];
+//     }
+//     console.log(newWord[i]);
+//   }
+//   return longWord;
+// }
+// // Напиши функцію findLongestWord(string),
+// // яка приймає довільний рядок, що складається тільки зі слів,
+// // розділених пробілом (параметр string),
+// // і повертає найдовше слово в цьому рядку.
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
