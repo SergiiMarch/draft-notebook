@@ -1156,3 +1156,18 @@
 // console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
 // console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
