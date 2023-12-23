@@ -1171,3 +1171,80 @@
 // }
 // console.log(filterArray([1, 2, 3, 4, 5], 4));
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+// const a = 3 % 3;
+// console.log(a);
+// const b = 4 % 3;
+// console.log(b);
+// const c = 11 % 8;
+// console.log(c);
+// const d = 12 % 7;
+// console.log(d);
+// const e = 8 % 6;
+// console.log(e);
+// // Оголошена змінна a
+// // Значення змінної a - це число 0
+// // Оголошена змінна b
+// // Значення змінної b - це число 1
+// // Оголошена змінна c
+// // Значення змінної c - це число 3
+// // Оголошена змінна d
+// // Значення змінної d - це число 5
+// // Оголошена змінна e
+// // Значення змінної e - це число 2
+// console.log(a);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function getEvenNumbers(start, end) {
+//   // Change code below this line
+//   const newArray = [];
+//   // Change code above this line
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       newArray.push(i);
+//     }
+//   }
+//   return newArray;
+// }
+// // Напиши функцію getEvenNumbers(start, end),
+// // яка повертає масив усіх парних чисел від start до end.
+// // Парним вважається число, яке ділиться на 2 без остачі (10 % 2 === 0).
+// console.log(getEvenNumbers(6, 12));
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+
+//   // Change code above this line
+// }
+// console.log(findNumber(2, 6, 5));
+// console.log(findNumber(16, 35, 7));
+// // Виконай рефакторинг функції
+// // findNumber(start, end, divisor) таким чином, щоб вона:
+// // повертала перше число від start до end, яке ділиться на divisor без остачі
+// // не використала оператор break
+// // не використала змінну number
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// function includes(array, value) {
+//   // Change code below this line
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i] === value) {
+//       return true;
+//     }
+//   }
+//   // Change code above this line
+//   return false;
+// }
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(
+//   includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")
+// );
+// // Напиши функцію includes(array, value),
+// //  яка робить те саме, що і метод масиву масив.includes(значення) - перевіряє,
+// //   чи присутнє в масиві array значення value, повертаючи true, якщо присутнє, і false в іншому випадку.
+// // При виконанні цього завдання в тілі функції includes() не можна використовувати метод масив.includes(значення).
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
