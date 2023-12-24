@@ -1282,14 +1282,54 @@
 //   console.log(`Eating pizza ${pizzaName}`);
 // });
 //////////////////////////////////////////////////////////////////////////////////////////
-function greet(name) {
-  console.log(`Ласкаво просимо ${name}.`);
-}
+// function greet(name) {
+//   console.log(`Ласкаво просимо ${name}.`);
+// }
 
-// Функція вищого порядку
-function registerGuest(name, callback) {
-  console.log(`Реєструємо гостя ${name}.`);
-  callback(name);
-}
+// // Функція вищого порядку
+// function registerGuest(name, callback) {
+//   console.log(`Реєструємо гостя ${name}.`);
+//   callback(name);
+// }
 
-registerGuest("Манго", greet);
+// registerGuest("Манго", greet);
+/////////////////////////////////////////////////////////////////////////////////////////
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {
+//     if (pizzaPalace.pizzas.includes(pizzaName)) {
+//       return onSuccess(pizzaName);
+//     } else {
+//       return onError(
+//         `There is no pizza with a name ${pizzaName} in the assortment.`
+//       );
+//     }
+//   },
+// };
+
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//   return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+// }
+
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
+
+// // Method calls with callbacks
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+// pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+// // Необхідно написати логіку обробки замовлення піци.
+// //  Виконай рефакторинг методу order таким чином,
+// //  щоб він приймав другим і третім параметром два колбеки onSuccess і onSuccess.
+// // Якщо у властивості pizzas відсутня піца з назвою з параметра pizzaName,
+// //  метод order повинен повертати результат виклику колбека onError,
+// //   передаючи йому аргументом рядок "There is no pizza with a name <имя пиццы> in the assortment."
+// // Якщо у властивості pizzas присутня піца з назвою з параметра pizzaName,
+// // метод order повинен повертати результат виклику колбека onSuccess,
+// //  передаючи йому аргументом назву замовленої піци.
+//////////////////////////////////////////////////////////////////////////////////////////
