@@ -1333,3 +1333,75 @@
 // // метод order повинен повертати результат виклику колбека onSuccess,
 // //  передаючи йому аргументом назву замовленої піци.
 //////////////////////////////////////////////////////////////////////////////////////////
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+//   // Change code below this line
+//   orderedItems.forEach(function (number) {
+//     totalPrice += number;
+//   });
+
+//   // Change code above this line
+//   return totalPrice;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+/////////////////////////////////////////////////////////////////////////////////////////
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+//   // Change code below this line
+//   numbers.forEach(function (number) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+//////////////////////////////////////////////////////////////////////////////////////////
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+//   // Change code below this line
+//   firstArray.forEach(function (number) {
+//     if (secondArray.includes(number)) {
+//       commonElements.push(number);
+//     }
+//   });
+
+//   return commonElements;
+//   // Change code above this line
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// function wave(str) {
+//   const res = [];
+//   for (let i = 0; i < str.length; i += 1) {
+//     res.push(str.slice(0, i) + str[i].toUpperCase() + str.slice(i + 1));
+//   }
+//   return res;
+// }
+// console.log(wave("hello"));
+/////////////////////////////////////////////////////////////////////////////////////////
+const filter = function (value, test) {
+  const newArray = [];
+  for (const el of value) {
+    console.log(el);
+    const newArray2 = test(el);
+    if (newArray2) {
+      newArray.push(el);
+    }
+    console.log(newArray2);
+  }
+
+  return newArray;
+};
+
+const callback1 = function (el) {
+  return el > 5;
+};
+const callback2 = function (el) {
+  return el >= 6;
+};
+// const r1 = filter([1, 2, 3, 4, 5]);
+console.log(filter([1, 2, 3, 4, 5, 7, 9, 11], callback1));
+console.log(filter([1, 2, 3, 4, 5, 7, 9, 11, 33, 43, 21, 28], callback2));
