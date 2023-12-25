@@ -1382,26 +1382,27 @@
 // }
 // console.log(wave("hello"));
 /////////////////////////////////////////////////////////////////////////////////////////
-const filter = function (value, test) {
-  const newArray = [];
-  for (const el of value) {
-    console.log(el);
-    const newArray2 = test(el);
-    if (newArray2) {
-      newArray.push(el);
-    }
-    console.log(newArray2);
-  }
+// const filter = function (value, test) {
+//   const newArray = [];
+//   for (const el of value) {
+//     console.log(el);
+//     const newArray2 = test(el);
+//     if (newArray2) {
+//       newArray.push(el);
+//     }
+//     console.log(newArray2);
+//   }
 
-  return newArray;
-};
+//   return newArray;
+// };
 
-const callback1 = function (el) {
-  return el > 5;
-};
-const callback2 = function (el) {
-  return el >= 6;
-};
-// const r1 = filter([1, 2, 3, 4, 5]);
-console.log(filter([1, 2, 3, 4, 5, 7, 9, 11], callback1));
-console.log(filter([1, 2, 3, 4, 5, 7, 9, 11, 33, 43, 21, 28], callback2));
+// const callback1 = function (el) {
+//   return el > 5;
+// };
+// const callback2 = function (el) {
+//   return el >= 6;
+// };
+// // const r1 = filter([1, 2, 3, 4, 5]);
+// console.log(filter([1, 2, 3, 4, 5, 7, 9, 11], callback1));
+// console.log(filter([1, 2, 3, 4, 5, 7, 9, 11, 33, 43, 21, 28], callback2));
+///////////////////////////////////////////////////////////////////////////////////////////////////
