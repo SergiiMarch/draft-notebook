@@ -1456,3 +1456,20 @@
 // };
 // console.dir(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+// const changeEven = (numbers, value) => {
+//   // Change code below this line
+//   let newArray = [...numbers];
+
+//   newArray.forEach((el, index, arr) => {
+//     console.log(numbers);
+
+//     if (el % 2 === 0) {
+//       arr[index] = el + value;
+//     }
+//   });
+//   return newArray;
+// };
+// // Change code above this line
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+////////////////////////////////////////////////////////////////////////////////////////////////////
