@@ -1441,3 +1441,18 @@
 // };
 // console.log(filterArray([1, 2, 3, 4, 5], 3));
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+
+//   firstArray.forEach((element) => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Change code above this line
+//   return commonElements;
+// };
+// console.dir(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+////////////////////////////////////////////////////////////////////////////////////////////////////
