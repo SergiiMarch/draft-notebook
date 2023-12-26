@@ -1480,3 +1480,226 @@
 // );
 // console.log(planetsLengths);
 //////////////////////////////////////////////////////////////////////////////////////////////
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const titles = books.map((book) => book.title.toUpperCase());
+// console.log(titles);
+// // Використовуючи метод map(),
+// // зроби так, щоб у змінній titles вийшов масив назв книг
+// //  (властивість title) з усіх об'єктів масиву books.
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism"],
+//   },
+// ];
+// // Change code below this line
+
+// const genres = books.flatMap((book) => book.genres);
+// console.log(genres);
+// // Використовуючи метод flatMap(),
+// // зроби так, щоб у змінній genres вийшов масив усіх жанрів книг
+// // (властивість genres) з масиву книг books.
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// // Change code below this line
+// const getUserNames = (users) => users.map((user) => user.name);
+// const getUserNames1 = (users) => users.map((user) => user.email);
+
+// // Change code above this line
+// // Доповни функцію getUserNames(users) таким чином,
+// //  щоб вона повертала масив імен користувачів
+// //  (властивість name) з масиву об'єктів в параметрі users.
+// console.log(
+//   getUserNames([
+//     {
+//       name: "Moore Hensley",
+//       email: "moorehensley@indexia.com",
+//       eyeColor: "blue",
+//       friends: ["Sharron Pace"],
+//       isActive: false,
+//       balance: 2811,
+//       skills: ["ipsum", "lorem"],
+//       gender: "male",
+//       age: 37,
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       email: "sharlenebush@tubesys.com",
+//       eyeColor: "blue",
+//       friends: ["Briana Decker", "Sharron Pace"],
+//       isActive: true,
+//       balance: 3821,
+//       skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
+//       gender: "female",
+//       age: 34,
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       email: "rossvazquez@xinware.com",
+//       eyeColor: "green",
+//       friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//       isActive: false,
+//       balance: 3793,
+//       skills: ["nulla", "anim", "proident", "ipsum", "elit"],
+//       gender: "male",
+//       age: 24,
+//     },
+//     {
+//       name: "Elma Head",
+//       email: "elmahead@omatom.com",
+//       eyeColor: "green",
+//       friends: ["Goldie Gentry", "Aisha Tran"],
+//       isActive: true,
+//       balance: 2278,
+//       skills: ["adipisicing", "irure", "velit"],
+//       gender: "female",
+//       age: 21,
+//     },
+//     {
+//       name: "Carey Barr",
+//       email: "careybarr@nurali.com",
+//       eyeColor: "blue",
+//       friends: ["Jordan Sampson", "Eddie Strong"],
+//       isActive: true,
+//       balance: 3951,
+//       skills: ["ex", "culpa", "nostrud"],
+//       gender: "male",
+//       age: 27,
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       email: "blackburndotson@furnigeer.com",
+//       eyeColor: "brown",
+//       friends: ["Jacklyn Lucas", "Linda Chapman"],
+//       isActive: false,
+//       balance: 1498,
+//       skills: ["non", "amet", "ipsum"],
+//       gender: "male",
+//       age: 38,
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       email: "shereeanthony@kog.com",
+//       eyeColor: "brown",
+//       friends: ["Goldie Gentry", "Briana Decker"],
+//       isActive: true,
+//       balance: 2764,
+//       skills: ["lorem", "veniam", "culpa"],
+//       gender: "female",
+//       age: 39,
+//     },
+//   ])
+// );
+// console.log(
+//   getUserNames1([
+//     {
+//       name: "Moore Hensley",
+//       email: "moorehensley@indexia.com",
+//       eyeColor: "blue",
+//       friends: ["Sharron Pace"],
+//       isActive: false,
+//       balance: 2811,
+//       skills: ["ipsum", "lorem"],
+//       gender: "male",
+//       age: 37,
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       email: "sharlenebush@tubesys.com",
+//       eyeColor: "blue",
+//       friends: ["Briana Decker", "Sharron Pace"],
+//       isActive: true,
+//       balance: 3821,
+//       skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
+//       gender: "female",
+//       age: 34,
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       email: "rossvazquez@xinware.com",
+//       eyeColor: "green",
+//       friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//       isActive: false,
+//       balance: 3793,
+//       skills: ["nulla", "anim", "proident", "ipsum", "elit"],
+//       gender: "male",
+//       age: 24,
+//     },
+//     {
+//       name: "Elma Head",
+//       email: "elmahead@omatom.com",
+//       eyeColor: "green",
+//       friends: ["Goldie Gentry", "Aisha Tran"],
+//       isActive: true,
+//       balance: 2278,
+//       skills: ["adipisicing", "irure", "velit"],
+//       gender: "female",
+//       age: 21,
+//     },
+//     {
+//       name: "Carey Barr",
+//       email: "careybarr@nurali.com",
+//       eyeColor: "blue",
+//       friends: ["Jordan Sampson", "Eddie Strong"],
+//       isActive: true,
+//       balance: 3951,
+//       skills: ["ex", "culpa", "nostrud"],
+//       gender: "male",
+//       age: 27,
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       email: "blackburndotson@furnigeer.com",
+//       eyeColor: "brown",
+//       friends: ["Jacklyn Lucas", "Linda Chapman"],
+//       isActive: false,
+//       balance: 1498,
+//       skills: ["non", "amet", "ipsum"],
+//       gender: "male",
+//       age: 38,
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       email: "shereeanthony@kog.com",
+//       eyeColor: "brown",
+//       friends: ["Goldie Gentry", "Briana Decker"],
+//       isActive: true,
+//       balance: 2764,
+//       skills: ["lorem", "veniam", "culpa"],
+//       gender: "female",
+//       age: 39,
+//     },
+//   ])
+// );
+///////////////////////////////////////////////////////////////////////////////////
