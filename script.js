@@ -1406,3 +1406,10 @@
 // console.log(filter([1, 2, 3, 4, 5, 7, 9, 11], callback1));
 // console.log(filter([1, 2, 3, 4, 5, 7, 9, 11, 33, 43, 21, 28], callback2));
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+// Change code below this line
+
+// const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+// // Change code above this line
+
+// console.log(calculateTotalPrice(5, 100));
+///////////////////////////////////////////////////////////////////////////////////////////////////
