@@ -1473,3 +1473,10 @@
 
 // console.log(changeEven([1, 2, 3, 4, 5], 10));
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // Change code below this line
+// const planetsLengths = planets.map(
+//   (planet) => `Планета ${planet.toUpperCase()} має довжbну ${planet.length}`
+// );
+// console.log(planetsLengths);
+//////////////////////////////////////////////////////////////////////////////////////////////
