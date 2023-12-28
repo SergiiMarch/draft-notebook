@@ -2200,3 +2200,45 @@
 // );
 // // Change code below this line
 /////////////////////////////////////////////////////////////////////////////////
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every((el) => el % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every((el) => el % 2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every((el) => el % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every((el) => el % 2 !== 0);
+
+// const eachElementInThirdIsEven = thirdArray.every((el) => el % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every((el) => el % 2 !== 0);
+// console.log(eachElementInFirstIsEven);
+// console.log(eachElementInFirstIsOdd);
+// // У змінній eachElementInFirstIsEven був результат перевірки всіх елементів масиву firstArray на парність.
+// // У змінній eachElementInFirstIsOdd був результат перевірки всіх елементів масиву firstArray на непарність.
+// // У змінній eachElementInSecondIsEven був результат перевірки всіх елементів масиву secondArray на парність.
+// // У змінній eachElementInSecondIsOdd був результат перевірки всіх елементів масиву secondArray на непарність.
+// // У змінній eachElementInThirdIsEven був результат перевірки всіх елементів масиву thirdArray на парність.
+// // У змінній eachElementInThirdIsOdd був результат перевірки всіх елементів масиву thirdArray на непарність.
+///////////////////////////////////////////////////////////////////////////////////////////////////
+const firstArray = [26, 94, 36, 18];
+const secondArray = [17, 61, 23];
+const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// Change below this line
+
+const anyElementInFirstIsEven = firstArray;
+const anyElementInFirstIsOdd = firstArray;
+
+const anyElementInSecondIsEven = secondArray;
+const anyElementInSecondIsOdd = secondArray;
+
+const anyElementInThirdIsEven = thirdArray;
+const anyElementInThirdIsOdd = thirdArray;
+
+// У змінній anyElementInFirstIsEven був результат перевірки наявності парних елементів в масиві firstArray.
+// У змінній anyElementInFirstIsOdd був результат перевірки наявності непарних елементів в масиві firstArray.
+// У змінній anyElementInSecondIsEven був результат перевірки наявності парних елементів в масиві secondArray.
+// У змінній anyElementInSecondIsOdd був результат перевірки наявності непарних елементів в масиві secondArray.
+// У змінній anyElementInThirdIsEven був результат перевірки наявності парних елементів в масиві thirdArray.
+// У змінній anyElementInThirdIsOdd був результат перевірки наявності непарних елементів в масиві thirdArray.
