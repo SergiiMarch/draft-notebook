@@ -2242,3 +2242,4 @@ const anyElementInThirdIsOdd = thirdArray;
 // У змінній anyElementInSecondIsOdd був результат перевірки наявності непарних елементів в масиві secondArray.
 // У змінній anyElementInThirdIsEven був результат перевірки наявності парних елементів в масиві thirdArray.
 // У змінній anyElementInThirdIsOdd був результат перевірки наявності непарних елементів в масиві thirdArray.
+.
