@@ -2222,24 +2222,3 @@
 // // У змінній eachElementInThirdIsEven був результат перевірки всіх елементів масиву thirdArray на парність.
 // // У змінній eachElementInThirdIsOdd був результат перевірки всіх елементів масиву thirdArray на непарність.
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-const firstArray = [26, 94, 36, 18];
-const secondArray = [17, 61, 23];
-const thirdArray = [17, 26, 94, 61, 36, 23, 18];
-// Change below this line
-
-const anyElementInFirstIsEven = firstArray;
-const anyElementInFirstIsOdd = firstArray;
-
-const anyElementInSecondIsEven = secondArray;
-const anyElementInSecondIsOdd = secondArray;
-
-const anyElementInThirdIsEven = thirdArray;
-const anyElementInThirdIsOdd = thirdArray;
-
-// У змінній anyElementInFirstIsEven був результат перевірки наявності парних елементів в масиві firstArray.
-// У змінній anyElementInFirstIsOdd був результат перевірки наявності непарних елементів в масиві firstArray.
-// У змінній anyElementInSecondIsEven був результат перевірки наявності парних елементів в масиві secondArray.
-// У змінній anyElementInSecondIsOdd був результат перевірки наявності непарних елементів в масиві secondArray.
-// У змінній anyElementInThirdIsEven був результат перевірки наявності парних елементів в масиві thirdArray.
-// У змінній anyElementInThirdIsOdd був результат перевірки наявності непарних елементів в масиві thirdArray.
-.
