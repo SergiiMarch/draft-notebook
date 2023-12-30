@@ -2222,3 +2222,41 @@
 // // У змінній eachElementInThirdIsEven був результат перевірки всіх елементів масиву thirdArray на парність.
 // // У змінній eachElementInThirdIsOdd був результат перевірки всіх елементів масиву thirdArray на непарність.
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((acc, times) => (acc += times), 0);
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// // Ігровому сервісу необхідний функціонал підрахунку середнього часу,
+// //  проведеного в іграх. Доповни код таким чином,
+// //   щоб у змінній totalPlayTime вийшло загальний ігровий час з масиву playtimes.
+// console.log(totalPlayTime);
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = [...players].reduce((acc, player) => {
+//   return acc + player.playtime / player.gamesPlayed;
+// }, 0);
+
+// // Нашому сервісу необхідно розрахувати середній час,
+// //  проведений в одній грі для кожного гравця,
+// //  і отримати загальну суму цих значень часу.
+// //  Розрахувати час для кожного з гравців можна,
+// //  розділивши його час (властивість playtime) на кількість ігор (властивість gamesPlayed).
+// console.log(totalAveragePlaytimePerGame);
+//////////////////////////////////////////////////////////////////////////////////////////////////
