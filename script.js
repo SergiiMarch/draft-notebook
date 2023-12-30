@@ -2413,3 +2413,37 @@
 // //  щоб вона рахувала і повертала загальну кількість друзів
 // //   (властивість friends) усіх користувачів з масиву users.
 //////////////////////////////////////////////////////////////////////////////////////////////////
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+// const alphabeticalAuthors = [...authors].sort((a, b) => a.localeCompare(b));
+// console.log(ascendingReleaseDates);
+// console.log(alphabeticalAuthors);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+// // Change code below this line
+
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+// console.log(authorsInAlphabetOrder);
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+// console.log(authorsInReversedOrder);
+// // Онлайн бібіліотеці необхідно відображати книги,
+// // відсортовані за автором, в алфавітному і зворотному алфавітному порядку.
+// //  Доповни код таким чином, щоб у змінній authorsInAlphabetOrder вийшла копія масиву authors,
+// //   відсортована за алфавітом, а у змінній authorsInReversedOrder - копія,
+// //   відсортована у зворотному алфавітному порядку.
+/////////////////////////////////////////////////////////////////////////////////////////////////////
