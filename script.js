@@ -2924,3 +2924,12 @@
 
 // // Дано число. Выведите количество цифр в этом числе.
 ////////////////////////////////////////////////////////////////////////////////////
+function number(value1, value2) {
+  // return Number(String(value1)[0]) === Number(String(value2)[0]);
+  const numValue1 = parseInt(value1.toString()[0]);
+  const numValue2 = parseInt(value2.toString()[0]);
+  return numValue1 === numValue2;
+}
+console.log(number(413, 414));
+// Даны два числа.
+// Проверьте, что первые цифры этих чисел совпадают.
