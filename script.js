@@ -3069,3 +3069,18 @@
 // console.log(isIsogram("Dermatoglyphics"));
 // console.log(isIsogram("hElo"));
 ///////////////////////////////////////////////////////////////////////////////
+function sumArray(arr) {
+  let max = Math.max(...arr);
+  let min = Math.min(...arr);
+  console.log(min);
+  console.log(max);
+  let sum = 0;
+  for (let el of arr) {
+    if (el !== max && el !== min) {
+      sum += el;
+    }
+  }
+  return sum;
+}
+console.log(sumArray([11, 2, 8, 1, 2]));
+///////////////////////////////////////////////////////////////////////
