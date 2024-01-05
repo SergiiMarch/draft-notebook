@@ -3082,3 +3082,77 @@
 // }
 // console.log(sumArray([11, 2, 8, 1, 1, 2]));
 ///////////////////////////////////////////////////////////////////////
+
+// function likes(names) {
+//   let message = "";
+
+//   if (names.length === 0) {
+//     message = "no one likes this";
+//   } else if (names.length === 1) {
+//     message = `${names} likes this`;
+//   } else if (names.length === 2) {
+//     message = `${names[0]} and ${names[1]} like this`;
+//   } else if (names.length === 3) {
+//     message = `${names[0]}, ${names[1]} and ${names[2]} like this`;
+//   } else {
+//     message = `${names[0]}, ${names[1]} and ${
+//       names.length - 2
+//     } others like this`;
+//   }
+
+//   return message;
+// }
+
+// // Реалізуйте функцію, яка приймає масив,
+// // що містить імена людей, яким подобається предмет.
+// //  Він повинен повертати відображуваний текст,
+// //   як показано в прикладах:
+// // []                                -->  "no one likes this"
+// // ["Peter"]                         -->  "Peter likes this"
+// // ["Jacob", "Alex"]                 -->  "Jacob and Alex like this"
+// // ["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
+// // ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
+// // Примітка. Для 4 і більше імен число "and 2 others"просто збільшується.
+
+// console.log(likes([]));
+// console.log(likes(["Peter"]));
+// console.log(likes(["Alex", "Jacob"]));
+// console.log(likes(["Alex", "Jacob", "Mark", "Max", "Alex", "Jacob"]));
+// console.log(
+//   likes([
+//     "Alex",
+//     "Jacob",
+//     "Mark",
+//     "Alex",
+//     "Jacob",
+//     "Mark",
+//     "Max",
+//     "Alex",
+//     "Jacob",
+//     "Alex",
+//     "Jacob",
+//     "Mark",
+//     "Max",
+//     "Alex",
+//     "Jacob",
+//     "Alex",
+//     "Jacob",
+//     "Mark",
+//     "Max",
+//     "Alex",
+//     "Jacob",
+//     "Alex",
+//     "Jacob",
+//     "Mark",
+//     "Max",
+//     "Alex",
+//     "Jacob",
+//     "Alex",
+//     "Jacob",
+//     "Mark",
+//     "Max",
+//     "Alex",
+//     "Jacob",
+//   ])
+// );
+/////////////////////////////////////////////////////////////////////////////////////
