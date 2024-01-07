@@ -3196,3 +3196,5 @@ const child = {};
 // Change code above this line
 child.name = "Jason";
 child.age = 27;
+
+// Зміни код таким чином, щоб об'єкт parent став прототипом для об'єкта у змінній сhild.
