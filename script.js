@@ -3183,3 +3183,16 @@
 // }
 // console.log(switchItUp(5));
 ///////////////////////////////////////////////////////////////////////////////////////
+const parent = {
+  name: "Stacey",
+  surname: "Moore",
+  age: 54,
+  heritage: "Irish",
+};
+// Change code below this line
+
+const child = {};
+
+// Change code above this line
+child.name = "Jason";
+child.age = 27;
