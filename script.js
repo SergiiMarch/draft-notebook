@@ -3200,3 +3200,28 @@
 // // Зміни код таким чином, щоб об'єкт parent став прототипом для об'єкта у змінній сhild.
 // console.log(child.heritage);
 ////////////////////////////////////////////////////////////////////////////////////////
+// const ancestor = {
+//   name: "Paul",
+//   age: 83,
+//   surname: "Dawson",
+//   heritage: "Irish",
+// };
+// // Change code below this line
+
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
+
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
+
+// // Change code above this line
+// // Зміни код, побудувавши ланцюжок прототипів таким чином,
+// //  щоб об'єкт ancestor був прототипом для parent,
+// //  а той, своєю чергою, був прототипом для child.
+// console.dir(ancestor);
+// console.dir(parent);
+// console.dir(child);
+///////////////////////////////////////////////////////////////////////////////////////////
