@@ -3183,18 +3183,20 @@
 // }
 // console.log(switchItUp(5));
 ///////////////////////////////////////////////////////////////////////////////////////
-const parent = {
-  name: "Stacey",
-  surname: "Moore",
-  age: 54,
-  heritage: "Irish",
-};
-// Change code below this line
+// const parent = {
+//   name: "Stacey",
+//   surname: "Moore",
+//   age: 54,
+//   heritage: "Irish",
+// };
+// // Change code below this line
 
-const child = {};
+// const child = Object.create(parent);
 
-// Change code above this line
-child.name = "Jason";
-child.age = 27;
+// // Change code above this line
+// child.name = "Jason";
+// child.age = 27;
 
-// Зміни код таким чином, щоб об'єкт parent став прототипом для об'єкта у змінній сhild.
+// // Зміни код таким чином, щоб об'єкт parent став прототипом для об'єкта у змінній сhild.
+// console.log(child.heritage);
+////////////////////////////////////////////////////////////////////////////////////////
