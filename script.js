@@ -3358,3 +3358,61 @@ console.log(findDifference([2, 2, 3], [5, 7, 4, 1]));
 // // padBoth(str) - отримує параметр str (рядок)
 // //  і додає його на початок і в кінець значення властивості value об'єкта, який викликає цей метод.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// class Car {
+//   // Change code below this line
+//   #brand;
+//   constructor({ brand, model, price }) {
+//     this.#brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+
+//   // Change code above this line
+//   getBrand() {
+//     return this.#brand;
+//   }
+//   changeBrand(newBrand) {
+//     this.#brand = newBrand;
+//   }
+// }
+
+// // Виконай рефакторинг класу Car таким чином,
+// // щоб властивість brand була приватною,
+// // і додай два методи для публічного інтерфейсу, для читання і зміни цієї властивості.
+
+// // getBrand() - повертає значення приватної властивості brand.
+// // changeBrand(newBrand) - змінює значення приватної властивості brand на newBrand.
+// console.log(new Car({ brand: "Audi", model: "Q3", price: 36000 }));
+// console.log(new Car({ brand: "bmw", model: "X5", price: 58900 }));
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// class Storage {
+//   // Change code below this line
+//   #items;
+//   constructor(items) {
+//     this.#items = items;
+//   }
+
+//   getItems() {
+//     return this.#items;
+//   }
+
+//   addItem(newItem) {
+//     this.#items.push(newItem);
+//   }
+
+//   removeItem(itemToRemove) {
+//     this.#items = this.#items.filter((item) => item !== itemToRemove);
+//   }
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
+// // Виконай рефакторинг класу Storage, зробивши властивість items приватною.
+// // Під коментарем ми додали ініціалізацію екземпляра і виклики методів у тій послідовності,
+// //  в якій твій код перевірятимуть тести. Будь ласка, нічого там не змінюй.
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
