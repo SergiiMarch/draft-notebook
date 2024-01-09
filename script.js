@@ -3416,3 +3416,117 @@ console.log(findDifference([2, 2, 3], [5, 7, 4, 1]));
 // // Під коментарем ми додали ініціалізацію екземпляра і виклики методів у тій послідовності,
 // //  в якій твій код перевірятимуть тести. Будь ласка, нічого там не змінюй.
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// class Car {
+//   // Change code below this line
+//   #brand;
+//   #model;
+//   #price;
+//   constructor({ brand, model, price }) {
+//     this.#brand = brand;
+//     this.#model = model;
+//     this.#price = price;
+//   }
+
+//   get brand() {
+//     return this.#brand;
+//   }
+
+//   set brand(newBrand) {
+//     this.#brand = newBrand;
+//   }
+
+//   get model() {
+//     return this.model;
+//   }
+
+//   set model(newModel) {
+//     this.model = newModel;
+//   }
+
+//   get price() {
+//     return this.price;
+//   }
+
+//   set price(newPrice) {
+//     this.price = newPrice;
+//   }
+//   // Change code above this line
+// }
+// // Виконай рефакторинг класу Car.
+// // Зроби властивості model і price приватними,
+// // а також #brand. Стандартизуй публічний інтерфейс класу,
+// // замінивши вже оголошені методи на гетери та сетери brand,
+// // model і price, для взаємодії з приватними властивостями.
+
+//////////////////////////////////////////////////////////////////////////////
+class Car {
+  // Change code below this line
+  #price;
+
+  constructor({ price }) {
+    this.#price = price;
+  }
+
+  get price() {
+    return this.#price;
+  }
+
+  set price(newPrice) {
+    this.#price = newPrice;
+  }
+  // Change code above this line
+}
+
+const audi = new Car({ price: 35000 });
+console.log(audi.price); // 35000
+
+audi.price = 49000;
+console.log(audi.price); // 49000
+
+audi.price = 51000;
+console.log(audi.price); // 49000
+
+// Виконай рефакторинг класу Car.
+// Додай публічну статичну властивість MAX_PRICE зі
+// значенням 50000 - максимально допустима ціна автомобіля.
+// Додай сетеру price перевірку значення параметра newPrice,
+//  що передається. Якщо воно більше за MAX_PRICE, сеттер нічого не робить,
+//   а якщо менше або дорівнює, то перезаписує ціну автомобіля.
+///////////////////////////////////////////////////////////////////////////////
+// function numberArray(arr) {
+//   return arr.reduce((sum, num) => sum + num ** 2, 0);
+// }
+// console.log(numberArray([1, 2, 3, 4, 5]));
+// // Дан массив с числами.
+// // Найдите сумму квадратов элементов этого массива.
+//////////////////////////////////////////////////////////////////////////////
+// function numberArray(arr) {
+//   return arr.reduce((sum, num) => sum + Math.sqrt(num), 0);
+// }
+// console.log(numberArray([1, 2, 3, 4, 5]));
+// // Дан массив с числами.
+// //  Найдите сумму квадратных корней элементов этого массива.
+/////////////////////////////////////////////////////////////////////////////
+// // function numberArray(arr) {
+// //   let sum = 0;
+// //   for (let i = 0; i < arr.length; i += 1) {
+// //     if (arr[i] > 0) {
+// //       sum += arr[i];
+// //     }
+// //   }
+// //   return sum;
+// // }
+// const numberArray = (arr) =>
+//   arr.reduce((sum, num) => (num > 0 ? sum + num : sum), 0);
+
+// console.log(numberArray([1, -2, 3, 4, 5]));
+// // Дан массив с числами.
+// //  Найдите сумму положительных элементов этого массива.
+/////////////////////////////////////////////////////////////////////////////////////////////
+// function numberArray(arr) {
+//   return arr.reduce((sum, num) => (num > 0 && num < 10 ? sum + num : sum), 0);
+// }
+// console.log(numberArray([11, 2, 3, 4, 15]));
+// // Дан массив с числами.
+// //  Найдите сумму тех элементов этого массива,
+// //   которые больше нуля и меньше десяти.
