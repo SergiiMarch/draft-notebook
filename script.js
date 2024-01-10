@@ -3541,3 +3541,21 @@ console.log(audi.price); // 49000
 // console.log(stringArray("12345"));
 // // Получите массив цифр этого числа.
 //////////////////////////////////////////////////////////////////////////////////////////
+
+// Дано некоторое число:
+// const numberArray = (num) => String(num).split("").reverse().map(Number);
+// // function numberArray(num) {
+// //   let newArr = [];
+// //   let res = String(num).split("");
+// //   for (let i = res.length - 1; i >= 0; i -= 1) {
+// //     console.log(res[i]);
+// //     newArr.push(res[i]);
+// //   }
+// //   return newArr;
+// // }
+// console.log(numberArray(12345));
+// // 12345
+// // Переверните его:
+
+// // 54321
+/////////////////////////////////////////////////////////////////////////////////////////////
