@@ -3459,39 +3459,6 @@ console.log(findDifference([2, 2, 3], [5, 7, 4, 1]));
 // // model і price, для взаємодії з приватними властивостями.
 
 //////////////////////////////////////////////////////////////////////////////
-class Car {
-  // Change code below this line
-  #price;
-
-  constructor({ price }) {
-    this.#price = price;
-  }
-
-  get price() {
-    return this.#price;
-  }
-
-  set price(newPrice) {
-    this.#price = newPrice;
-  }
-  // Change code above this line
-}
-
-const audi = new Car({ price: 35000 });
-console.log(audi.price); // 35000
-
-audi.price = 49000;
-console.log(audi.price); // 49000
-
-audi.price = 51000;
-console.log(audi.price); // 49000
-
-// Виконай рефакторинг класу Car.
-// Додай публічну статичну властивість MAX_PRICE зі
-// значенням 50000 - максимально допустима ціна автомобіля.
-// Додай сетеру price перевірку значення параметра newPrice,
-//  що передається. Якщо воно більше за MAX_PRICE, сеттер нічого не робить,
-//   а якщо менше або дорівнює, то перезаписує ціну автомобіля.
 ///////////////////////////////////////////////////////////////////////////////
 // function numberArray(arr) {
 //   return arr.reduce((sum, num) => sum + num ** 2, 0);
@@ -3569,3 +3536,39 @@ console.log(audi.price); // 49000
 // // 12345
 // // Найдите сумму цифр этого числа.
 ///////////////////////////////////////////////////////////////////////
+// class Car {
+//   // Change code below this line
+//   static MAX_PRICE = 50000;
+//   #price;
+
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     if (newPrice <= Car.MAX_PRICE) {
+//       this.#price = newPrice;
+//     }
+//   }
+//   // Change code above this line
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 490
+// // Виконай рефакторинг класу Car.
+// //  Додай публічну статичну властивість MAX_PRICE зі значенням 50000
+// //   - максимально допустима ціна автомобіля.
+// // Додай сетеру price перевірку значення параметра newPrice,
+// //  що передається. Якщо воно більше за MAX_PRICE,
+// //  сеттер нічого не робить, а якщо менше або дорівнює, то перезаписує ціну автомобіля.
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
