@@ -3600,3 +3600,26 @@ console.log(findDifference([2, 2, 3], [5, 7, 4, 1]));
 // // метод повинен повернути рядок "Error! Price exceeds the maximum".
 // // В іншому випадку метод повинен повернути рядок "Success! Price is within acceptable limits".
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// class User {
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// // Change code below this line
+
+// class Admin extends User {
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+// }
+// console.log(Admin.AccessLevel.SUPERUSER);
+/////////////////////////////////////////////////////////////////////////////////////////
