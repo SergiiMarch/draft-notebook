@@ -3670,66 +3670,66 @@ console.log(findDifference([2, 2, 3], [5, 7, 4, 1]));
 // // Щоб показати, як буде використовуватися клас Admin,
 // //  ми додали ініціалізацію екземпляра під оголошенням класу.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-class User {
-  _email;
+// class User {
+//   _email;
 
-  constructor(email) {
-    this._email = email;
-  }
+//   constructor(email) {
+//     this._email = email;
+//   }
 
-  get email() {
-    return this._email;
-  }
+//   get email() {
+//     return this._email;
+//   }
 
-  set email(newEmail) {
-    this._email = newEmail;
-  }
-}
-class Admin extends User {
-  // Change code below this line
+//   set email(newEmail) {
+//     this._email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Change code below this line
+//   blacklistedEmails = [];
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
 
-  static AccessLevel = {
-    BASIC: "basic",
-    SUPERUSER: "superuser",
-  };
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
 
-  constructor({ email, accessLevel }) {
-    super(email);
-    this.accessLevel = accessLevel;
-  }
-  blacklistedEmails = [];
-  // Change code above this line
-  blacklist(email) {
-    this.blacklistedEmails.push(email);
-  }
+//   // Change code above this line
+//   blacklist(email) {
+//     this.blacklistedEmails.push(email);
+//   }
 
-  isBlacklisted(email) {
-    return this.blacklistedEmails.includes(email);
-  }
-}
+//   isBlacklisted(email) {
+//     return this.blacklistedEmails.includes(email);
+//   }
+// }
 
-const mango = new Admin({
-  email: "mango@mail.com",
-  accessLevel: Admin.AccessLevel.SUPERUSER,
-});
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
 
-console.log(mango.email); // "mango@mail.com"
-console.log(mango.accessLevel); // "superuser"
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
 
-mango.blacklist("poly@mail.com");
-console.log(mango.blacklistedEmails); // ["poly@mail.com"]
-console.log(mango.isBlacklisted("mango@mail.com")); // false
-console.log(mango.isBlacklisted("poly@mail.com")); // true
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
 
-// Додай класу Admin наступні властивості і методи.
-// Публічну властивість blacklistedEmails для зберігання чорного списку
-// поштових адрес користувачів. Значення за замовчуванням — це порожній масив.
-// Публічний метод blacklist(email) для додавання пошти у чорний список.
-//  Метод повинен додавати значення параметра email в масив,
-//   що зберігається у властивості blacklistedEmails.
-// Публічний метод isBlacklisted(email) для перевірки пошти у чорному списку.
-//  Метод повинен перевіряти наявність значення параметра email в масиві,
-//   що зберігається у властивості blacklistedEmails, і повертати true або false.
-// Після оголошення класу ми додали ініціалізацію екземпляра і виклики методів у тій послідовності,
-//  в якій твій код перевірятимуть тести. Будь ласка, нічого там не змінюй.
+// // Додай класу Admin наступні властивості і методи.
+// // Публічну властивість blacklistedEmails для зберігання чорного списку
+// // поштових адрес користувачів. Значення за замовчуванням — це порожній масив.
+// // Публічний метод blacklist(email) для додавання пошти у чорний список.
+// //  Метод повинен додавати значення параметра email в масив,
+// //   що зберігається у властивості blacklistedEmails.
+// // Публічний метод isBlacklisted(email) для перевірки пошти у чорному списку.
+// //  Метод повинен перевіряти наявність значення параметра email в масиві,
+// //   що зберігається у властивості blacklistedEmails, і повертати true або false.
+// // Після оголошення класу ми додали ініціалізацію екземпляра і виклики методів у тій послідовності,
+// //  в якій твій код перевірятимуть тести. Будь ласка, нічого там не змінюй.
 ///////////////////////////////////////////////////////////////////////////////////////////////////
