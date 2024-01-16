@@ -3853,9 +3853,21 @@ console.log(findDifference([2, 2, 3], [5, 7, 4, 1]));
 // // Знайдіть унікальний рядок
 // // Знайдіть унікальне
 ////////////////////////////////////////////////////////////////////                        ////////////////////////////////////////////////////////////
-const array = [
-  "http://example.com",
-  "https://example.org",
-  "ftp://example.net",
-  "http://another.com",
-];
+// const array = [
+//   "http://example.com",
+//   "https://example.org",
+//   "ftp://example.net",
+//   "http://another.com",
+// ];
+// const arrayRes = [];
+// for (const el of array) {
+//   console.log(el);
+//   if (el.startsWith("http://")) {
+//     arrayRes.push(el);
+//   }
+// }
+// console.log(arrayRes);
+// // Дан массив со строками.
+// //  Оставьте в этом массиве только те строки,
+// //  которые начинаются на http://.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
